@@ -54,7 +54,8 @@ function addsubscribe($user_email,$token,$sku_id){
 	$data = [
 		'addLicenses'=>[
 			[
-				'disabledPlans'=>[],
+				'disabledPlans'=>['57ff2da0-773e-42df-b2af-ffb7a2317929'], #一般订阅禁用这一个就可以了
+				#'disabledPlans'=>['57ff2da0-773e-42df-b2af-ffb7a2317929','42a3ec34-28ba-46b6-992f-db53a675ac5b'],#Teams试用订阅需要禁用两个
 				'skuId'=>$sku_id
 			],
 		],
