@@ -38,6 +38,8 @@
     <div class="hero mdui-col-xs-10 mdui-col-offset-xs-1 mdui-text-center">
         <div class="mdui-center mdui-typo-display-3"><?php echo $page_config['title'];?></div>
         <div class="mdui-typo-title-opacity"><?php echo $page_config['line1'];?></div>
+        <?php if ($page_config['origin_ip'] != "") { echo '<div class="mdui-typo-title-opacity">源IP:'.$page_config['origin_ip'].'</div>';}?>
+        <?php if ($page_config['qq_group'] != "") { echo '<div class="mdui-typo-title-opacity">交流QQ群:'.$page_config['qq_group'].'</div>';}?>
         <br>
         <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-red mdui-m-a-1 hero-btn" id="getOffice">获取账号</button>
         <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-white mdui-m-a-1 hero-btn" onclick="window.location.href='https://office.com/login'">登录</button>
