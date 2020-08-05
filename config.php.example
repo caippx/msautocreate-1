@@ -26,6 +26,8 @@ return [
     'page_config'=>[
         'title'=>'微软全局子号自助开通',
         'line1'=>'(5TB Onedrive + 桌面版office)',
+        'origin_ip'=>'',
+        'qq_group'=>'',
     ],
 
 
